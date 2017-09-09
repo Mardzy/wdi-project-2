@@ -1,0 +1,17 @@
+<h1>Index Page</h1>
+
+<div class="container">
+  <div class="row">
+    <% creations.forEach((creation) => { %>
+    <div class="col-lg-3">
+      <div class="">
+        <img src="<%= creation.image %>" style="width: 200px" alt="<%= creation.caption %>">
+      </div>
+      <div class="">
+        <p><%= creation.location %></p>
+        <a href="/creations/<%= creation.id %>"><h5><%= creation.artist %></h5></a>
+      </div>
+    </div>
+    <% }); %>
+  </div>
+</div>

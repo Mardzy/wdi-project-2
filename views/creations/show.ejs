@@ -1,0 +1,20 @@
+<h1>show</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9">
+      <figure class="image">
+        <img src="<%= creation.image %>" alt="<%= creation.caption %>" style="width: 65%">
+      </figure>
+        <div class="column">
+          <h4 class="title"><%= creation.artist %></h4>
+          <p class="subtitle"><%= creation.location %></p>
+          <p><%= creation.caption %></p>
+        </div>
+        <form method="POST" action="/creations/<%= creation.id %>">
+          <button class="btn btn-warning" href="/creations/<%= creation.id %>/edit">Edit</button>
+          <input type="hidden" name="_method" value="DELETE">
+          <button class="btn btn-danger">Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>

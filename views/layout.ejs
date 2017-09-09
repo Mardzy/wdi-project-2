@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Project 2</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/app.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <%- body %>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Project 2</title>
+  <%- include ./partials/_stylesheets %>
+</head>
+<body>
+  <%- include ./partials/_navbar %>
+  <% if(!locals.isHomepage) { %><main class="section"><% } %>
+  <%- body %>
+  <% if(!locals.isHomepage) { %></main><% } %>
+  <%- include ./partials/_scripts %>
+</body>
 </html>
