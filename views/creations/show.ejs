@@ -11,7 +11,7 @@
           <p><%= creation.caption %></p>
         </div>
         <form method="POST" action="/creations/<%= creation.id %>">
-          <button class="btn btn-warning" href="/creations/<%= creation.id %>/edit">Edit</button>
+          <a class="btn btn-warning" href="/creations/<%= creation.id %>/edit">Edit</a>
           <input type="hidden" name="_method" value="DELETE">
           <button class="btn btn-danger">Delete</button>
         </form>

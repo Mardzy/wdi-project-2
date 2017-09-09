@@ -1,6 +1,7 @@
 <h2>New Creations</h2>
 <div class="container">
-  <form method="POST" action="/creations/<%= creation.id %>">
+  <form method="POSTT" action="/creations/<%= creation.id %>">
+    <input type="hidden" name="_method" value="PUT">
     <div class="form-group row">
       <label for="artist" class="col-2 col-form-label">Artist</label>
       <div class="col-10">
@@ -25,7 +26,6 @@
         <input class="form-control" type="text" name="caption" value="<%= creation.caption %>" id="example-text-input">
       </div>
     </div>
-    <button type="button" class="btn btn-warning">Edit</button>
-
+    <button type="button" class="btn btn-primary">Update</button>
   </div>
 </form>

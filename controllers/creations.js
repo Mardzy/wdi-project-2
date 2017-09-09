@@ -24,6 +24,13 @@ function creationsShow(req, res) {
     .catch(err => res.render('error', { err }));
 }
 
+function creationsCreate(req, res) {
+  Creation
+    .create(req.body)
+    .then(() => res.redirect('/creations'))
+    .catch(err => res.render('error', { err }));
+}
+
 function creationsEdit(req, res) {
   Creation
     .findById(req.params.id)
@@ -32,13 +39,6 @@ function creationsEdit(req, res) {
       if(!creation) return res.status(404).end('Not found');
       res.render('creations/edit', { creation });
     })
-    .catch(err => res.render('error', { err }));
-}
-
-function creationsCreate(req, res) {
-  Creation
-    .create(req.body)
-    .then(() => res.redirect('/creations'))
     .catch(err => res.render('error', { err }));
 }
 
