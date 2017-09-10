@@ -3,8 +3,8 @@
 <div class="container">
   <div class="row">
     <% creations.forEach((creation) => { %>
-    <div class="col-lg-3">
-      <div class="">
+    <div class="col-sm-6 col-md-4 col-lg-3 ">
+      <div>
         <img src="<%= creation.image %>" style="width: 200px" alt="<%= creation.caption %>">
       </div>
       <div class="">
@@ -12,8 +12,7 @@
         <a href="/creations/<%= creation.id %>"><h5><%= creation.artist %></h5></a>
         <a href="/creations/<%= creation.id %>/edit" class="button btn-sm btn-warning">Edit</a>
       </div>
-
-    </div>
+      </div>
     <% }); %>
   </div>
 </div>

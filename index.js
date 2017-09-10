@@ -5,9 +5,9 @@ const { port, dbURI } = require('./config/environment');
 const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
-// const session = require('express-session');
-// const flash = require('express-flash');
-// const userAuth = require('./lib/userAuth');
+const session = require('express-session');
+const flash = require('express-flash');
+const userAuth = require('./lib/userAuth');
 
 const morgan = require('morgan');
 const mongoose = require('mongoose');
@@ -33,13 +33,15 @@ app.use(methodOverride(req => {
   }
 }));
 
-// app.use(session({
-//   resave: false,
-//   saveUninitialized: false
-// }));
-// app.use(flash());
+app.use(session({
+  secret: process.env.SESSION_SECRET || 'ssh it\'s a secret',
+  resave: false,
+  saveUninitialized: false
+}));
 
-// app.use(userAuth);
+app.use(flash());
+
+app.use(userAuth);
 
 app.use(routes);
 

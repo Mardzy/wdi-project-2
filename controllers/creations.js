@@ -12,16 +12,16 @@ function creationsIndex(req, res) {
     });
 }
 
-function creationsNew(req, res) {
-  res.render('creations/new');
-}
-
 function creationsShow(req, res) {
   Creation
     .findById(req.params.id)
     .exec()
     .then(creation => res.render('creations/show', { creation }))
     .catch(err => res.render('error', { err }));
+}
+
+function creationsNew(req, res) {
+  res.render('creations/new');
 }
 
 function creationsCreate(req, res) {
@@ -48,9 +48,11 @@ function creationsUpdate(req, res) {
     .exec()
     .then(creation => {
       creation = Object.assign(creation, req.body);
+      console.log('click');
       return creation.save();
     })
-    .then(creation => res.redirect(`/creations/${creation.id}`))
+    .then(creation =>
+      res.redirect(`/creations/${creation.id}`))
     .catch(err => res.render('error', { err }));
 }
 
