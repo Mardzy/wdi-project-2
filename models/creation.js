@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+
+
 const creationSchema = new mongoose.Schema({
   artist: { type: String, required: true },
   location: { type: String, required: true },
