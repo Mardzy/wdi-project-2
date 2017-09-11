@@ -1,29 +1,36 @@
-<h2>New Creations</h2>
-<div class="container">
-  <form method="POST" action="/creations/<%= creation.id %>">
+
+
+
+
+
+<div class="container-fluid">
+  <header class="row justify-content-center">
+    <h2 class="col-12">Edit Photos</h2>
+  </header>
+  <form method="POST" action="/photos/<%= photo.id %>">
     <input type="hidden" name="_method" value="PUT">
     <div class="form-group row">
       <label for="artist" class="col-2 col-form-label">Artist</label>
       <div class="col-10">
-        <input class="form-control" type="text" name="artist" value="<%= creation.artist %>" id="example-text-input">
+        <input class="form-control" type="text" name="artist" value="<%= photo.artist %>" id="example-text-input">
       </div>
     </div>
     <div class="form-group row">
       <label for="location" class="col-2 col-form-label">Location</label>
       <div class="col-10">
-        <input class="form-control" type="text" name="location" value="<%= creation.location %>" id="example-text-input">
+        <input class="form-control" type="text" name="location" value="<%= photo.location %>" id="example-text-input">
       </div>
     </div>
     <div class="form-group row">
       <label for="image" class="col-2 col-form-label">Image URL</label>
       <div class="col-10">
-        <input class="form-control" type="url" name="image" value="<%= creation.image %>" id="example-url-input">
+        <input class="form-control" type="url" name="image" value="<%= photo.image %>" id="example-url-input">
       </div>
     </div>
     <div class="form-group row">
       <label for="caption" class="col-2 col-form-label">Description</label>
       <div class="col-10">
-        <input class="form-control" type="text" name="caption" value="<%= creation.caption %>" id="example-text-input">
+        <input class="form-control" type="text" name="caption" value="<%= photo.caption %>" id="example-text-input">
       </div>
     </div>
     <button class="btn btn-primary">Update</button>

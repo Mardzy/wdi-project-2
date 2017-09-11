@@ -1,0 +1,22 @@
+<header>
+  <h2>Feature Artists</h2>  
+</header>
+
+<div class="container">
+  <div class="row">
+    <% artists.forEach((artist) => { %>
+    <div class="col-sm-6 col-lg-4 ">
+      <div>
+        <img class="shadow" src="<%= artist.image %>" alt="<%= artist.caption %>">
+      </div>
+        <div>
+          <a href="/artists/<%= artist.id %>"><h5><%= artist.name %></h5></a>
+          <p><%= artist.location %></p>
+          <p><%= artist.styles %></p>
+          <p><%= artist.age %></p>
+          <p><%= artist.nationality %></p>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</div>

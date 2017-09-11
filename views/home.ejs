@@ -1,1 +1,28 @@
-<h1>Heaven Spot Kings &amp; Queens</h1>
+<div class="container hero">
+  <div class="overlay">
+  </div>
+  <header class="row main-header">
+    <h1 class="col-12">Heaven Spot Heroes</h1>
+  </header>
+</div>
+<div class="container-fluid homepage">
+  <h3>Street Art Types</h3>
+  <article class="row">
+    <% types.forEach((type) => { %>
+      <div class="col-lg-6">
+          <img class="shadow" src="<%= type.image %>" alt="<%= type.type %>">
+          <p><%= type.type %></p>
+      </div>
+    <% }); %>
+  </article>
+  <h3>Street Art Terms</h3>
+  <article class="row">
+    <% terms.forEach((term) => { %>
+      <div class="col-lg-10">
+        <h5><%= term.headline %></h5>
+        <p><%= term.description %></p>
+      </div>
+    <% }); %>
+  </article>
+
+</div>

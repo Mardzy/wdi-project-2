@@ -1,0 +1,19 @@
+<header>
+  <h2>Gallery</h2>
+</header>
+
+<div class="container">
+  <div class="row">
+    <% photos.forEach((photo) => { %>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="photo-image">
+        <img src="<%= photo.image %>" alt="<%= photo.caption %>">
+      </div>
+      <div class="description">
+        <p><%= photo.location %></p>
+        <a class="name"href="/photos/<%= photo.id %>"><h5 class="name"><%= photo.artist %></h5></a>
+      </div>
+    </div>
+    <% }); %>
+  </div>
+</div>

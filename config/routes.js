@@ -1,36 +1,39 @@
 const router = require('express').Router();
 
-
-const creations = require('../controllers/creations');
-const nobles = require('../controllers/nobles');
+const photos = require('../controllers/photos');
+const statics = require('../controllers/statics');
+const artists = require('../controllers/artists');
 const registrations = require('../controllers/registrations');
 const sessions = require('../controllers/sessions');
 
 
-router.get('/', (req, res) => res.render('home', { isHomepage: true }));
-
-router.route('/creations')
-  .get( creations.index)
-  .post( creations.create );
-
-router.route('/nobles')
-  .get( nobles.index );
-
-router.route('/nobles/:id')
-  .get( nobles.show );
-
-router.route('/creations/new')
-  .get( creations.new );
-
-router.route('/creations/:id')
-  .get( creations.show )
-  .put( creations.update )
-  .delete( creations.delete );
+router.get('/', statics.index);
 
 
+router.route('/photos')
+  .get( photos.index)
+  .post( photos.create );
 
-router.route('/creations/:id/edit')
-  .get( creations.edit );
+router.route('/artists')
+  .get( artists.index );
+
+router.route('/artists/:id')
+  .get( artists.show );
+
+router.route('/photos/new')
+  .get( photos.new );
+
+router.post('/photos/:id/comments', photos.commentsCreate);
+
+router.delete('/photos/:id/comments/:commentId', photos.commentsDelete);
+
+router.route('/photos/:id')
+  .get( photos.show )
+  .put( photos.update )
+  .delete( photos.delete );
+
+router.route('/photos/:id/edit')
+  .get( photos.edit );
 
 router.route('/register')
   .get(registrations.new)

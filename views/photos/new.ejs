@@ -1,6 +1,8 @@
-<h2>New Creations</h2>
+<header>
+  <h2>New Photo Submissions</h2>
+</header>
 <div class="container">
-  <form method="POST" action="/creations">
+  <form method="POST" action="/photos">
     <div class="form-group row">
       <label for="example-text-input" class="col-2 col-form-label">Artist</label>
       <div class="col-10">
@@ -16,13 +18,13 @@
     <div class="form-group row">
       <label for="example-url-input" class="col-2 col-form-label">Image URL</label>
       <div class="col-10">
-        <input class="form-control" name="image" type="url" placeholder="https://i.imgur.com/obnfkgGb.jpg" id="example-url-input">
+        <input class="form-control" name="image" type="url" placeholder="https://i.imgur.com/obnfkgGb.jpg (square images preferred)" id="example-url-input">
       </div>
     </div>
     <div class="form-group row">
       <label for="example-text-input" class="col-2 col-form-label">Description</label>
       <div class="col-10">
-        <input class="form-control" name="caption" type="text" placeholder="Woman Bloody nose" id="example-text-input">
+        <input class="form-control" name="caption" type="text" placeholder="Purple and green bear" id="example-text-input">
       </div>
     </div>
     <button class="btn btn-primary">Submit</button>

@@ -1,0 +1,48 @@
+
+.hero{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  background-image:linear-gradient(to top, rgba(20, 20, 20, 0.2), rgba(0, 0, 0, 0.6)), url('https://i.imgur.com/u0c8dXa.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: flex-end;
+
+}
+.main-header {
+  margin-bottom: 20%;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  h1{
+  font-size: 50px;
+  padding: 5px 15px;
+  font-weight: 200;
+  }
+}
+.container-fluid{
+  justify-content: space-around;
+  background-color: $background-color;
+  z-index: -1;
+}
+
+.hero {
+  position: fixed;
+  top: 0;
+  z-index: -2;
+  height: 100vh;
+}
+
+.homepage {
+  margin-top: 100vh;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAADUlEQVR42mNg8GWAAAACcgBO5qlXQgAAAABJRU5ErkJggg==) repeat 0 0;
+}

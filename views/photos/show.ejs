@@ -1,0 +1,51 @@
+
+
+  <div class="container">
+    <header>
+      <h2><%= photo.artist %></h1>
+    </header>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="image">
+          <img src="<%= photo.image %>" alt="<%= photo.caption %>">
+        </div>
+        <div class="column">
+          <p class="subtitle"><%= photo.location %></p>
+          <p><%= photo.caption %></p>
+
+        <div>
+<% if(locals.isAuthenticated){ %>
+          <form method="POST" action="/photos/<%= photo.id %>">
+            <a class="btn btn-warning" href="/photos/<%= photo.id %>/edit">Edit</a>
+            <input type="hidden" name="_method" value="DELETE">
+            <button class="btn btn-danger">Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="col-lg-6">
+  <form method="POST" action="/photos/<%= photo.id %>/comments">
+    <div>
+      <label>Comment</label>
+      <textarea name="text"></textarea>
+      <button class="btn-sm btn-primary">Submit</button>
+    </div>
+  </form>
+  <ul>
+    <% photo.comments.forEach(comment => { %>
+      <li>
+        <%= comment.text %>
+        <form method="POST" action="/photos/<%= photo.id %>/comments/<%= comment.id %>">
+        <input id="comment-delete"type="hidden" name="_method" value="DELETE">
+        <button class="btn-sm btn-primary">X</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+  </div>
+  </div>
+  </div>
+
+<% } %>

@@ -1,0 +1,20 @@
+<header>
+  <h1><%= artist.name %></h1>
+</header>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <figure class="image">
+          <img src="<%= artist.image %>" alt="<%= artist.caption %>">
+        </figure>
+        <div class="row name">
+          <p class="col-6 style"><%= artist.styles %></p>
+        </div>
+      </div>
+      <div class="col-lg-4 description">
+        <p><%= artist.description %></p>
+      </div>
+    </div>
+  </div>
+</main>
