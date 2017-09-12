@@ -104,145 +104,145 @@ Artist.create([{
             return Photo.create([{
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: 'https/assets/images/hanging-min.jpg',
+              image: 'https/assets/images/square/hanging-min.jpg',
               caption: 'left me hanging',
               comments: []
             }, {
               artist: 'Jimmy C',
               location: 'Brixton',
-              image: '/assets/images/brixton-bowie-min.jpg',
+              image: '/assets/images/square/brixton-bowie.jpg',
               caption: 'David Bowie',
               comments: []
             }, {
               artist: 'Ricky Dep',
               location: 'Shoreditch',
-              image: '/assets/images/ricky-d-min.jpg',
+              image: '/assets/images/square/ricky-d-min.jpg',
               caption: 'Indian Cartoon Man',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Reykjavik',
-              image: '/assets/images/reykjavik-min.jpg',
+              image: '/assets/images/square/reykjavik-min.jpg',
               caption: 'Lovers on Barn',
               comments: []
             }, {
               artist: 'Wuskerski',
               location: 'Shoreditch',
-              image: '/assets/images/oink-wusk-min.jpg',
+              image: '/assets/images/square/oink-wusk-min.jpg',
               caption: 'horn snout cartoon',
               comments: []
             }, {
               artist: 'Wuskerski',
               location: 'Shoreditch',
-              image: '/assets/images/gr-pur-wusk-min.jpg',
+              image: '/assets/images/square/gr-pur-wusk-min.jpg',
               caption: 'Green and purple bear',
               comments: []
             }, {
               artist: 'Wuskerski',
               location: 'Shoreditch',
-              image: '/assets/images/bloody-nose-wusk-min.jpg',
+              image: '/assets/images/square/bloody-nose-wusk-min.jpg',
               caption: 'woman bloody nose',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: '/assets/images/vulture-min.jpg',
+              image: '/assets/images/square/vulture-min.jpg',
               caption: 'Woman with vuture',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: '/assets/images/cat-in-cat-min.jpg',
+              image: '/assets/images/square/cat-in-cat-min.jpg',
               caption: 'cat inside cat',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Toronto',
-              image: '/assets/images/toronto-min.jpg',
+              image: '/assets/images/square/toronto-min.jpg',
               caption: 'toronto street art',
               comments: []
             }, {
               artist: 'Jimmy C',
               location: 'London',
-              image: '/assets/images/jimmy-c-min.jpg',
-              caption: 'vote dodo',
+              image: '/assets/images/square/jimmy-c-min.jpg',
+              caption: 'girl and tree',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: '/assets/images/old-man-min.jpg',
+              image: '/assets/images/square/old-man-min.jpg',
               caption: 'Old man\'s face',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Cape Town',
-              image: '/assets/images/woodstock.jpg',
+              image: '/assets/images/square/woodstock.jpg',
               caption: 'Devil\'s peak art',
               comments: []
             }, {
               artist: 'Lapiztola',
               location: 'Shoreditch',
-              image: '/assets/images/pig-lapiztola-min.jpg',
+              image: '/assets/images/square/pig-lapiztola-min.jpg',
               caption: 'Pig girl woman',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Kiev',
-              image: '/assets/images/kiev-min.jpg',
+              image: '/assets/images/square/kiev-min.jpg',
               caption: 'street art photo',
               comments: []
             }, {
               artist: 'David DeBrito',
               location: 'Shoreditch',
-              image: '/assets/images/deBrito-min.jpg',
+              image: '/assets/images/square/deBrito-min.jpg',
               caption: 'street art photo',
               comments: []
             } , {
               artist: 'Multiple',
               location: 'Shoreditch',
-              image: '/assets/images/links-min.jpg',
+              image: '/assets/images/square/links-min.jpg',
               caption: 'street art photo',
               comments: []
             } , {
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: '/assets/images/cars-min.jpg',
+              image: '/assets/images/square/cars-min.jpg',
               caption: 'street art photo',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Copenhagen',
-              image: '/assets/images/copenhagen-min.jpg',
+              image: '/assets/images/square/copenhagen-min.jpg',
               caption: 'street art photo',
               comments: []
             }, {
               artist: 'Unkown',
               location: 'Berlin',
-              image: '/assets/images/berlin-love-wall-min.jpg',
+              image: '/assets/images/square/berlin-love-wall-min.jpg',
               caption: 'street art photo',
               comments: []
             }, {
               artist: 'Globalstre',
               location: 'Shoreditch',
-              image: 'https/assets/images/asian-boy-min.jpg',
+              image: 'https/assets/images/square/asian-boy-min.jpg',
               caption: 'Asian Boy',
               comments: []
             }, {
               artist: 'Globalstre',
               location: 'Shoreditch',
-              image: 'https/assets/images/asian-boy-min.jpg',
+              image: 'https/assets/images/square/asian-boy-min.jpg',
               caption: 'Asian Boy',
               comments: []
             }, {
               artist: 'Invader',
               location: 'Shoreditch',
-              image: '/assets/images/star-wars-min.jpg',
+              image: '/assets/images/square/star-wars-min.jpg',
               caption: 'street art photo',
               comments: []
             }, {
               artist: 'Gregos',
               location: 'Shoreditch',
-              image: '/assets/images/gregos-min.jpg',
+              image: '/assets/images/square/gregos-min.jpg',
               caption: 'Gregos face',
               comments: []
             }
