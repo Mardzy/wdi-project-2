@@ -206,7 +206,7 @@ Artist.create([{
             } , {
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: '/assets/images/square/cars-min.jpg',
+              image: '/assets/images/square/car-min.jpg',
               caption: 'street art photo',
               comments: []
             }, {
