@@ -72,9 +72,10 @@ img{
   box-shadow: $box-shadow;
   border-radius: 5px;
 }
-// form{
-//   width: 60%;
-// }
+form{
+  background-color: $background-color;
+  color: $font-color;
+}
 
 .comments {
   form {
