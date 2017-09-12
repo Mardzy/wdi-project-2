@@ -32,7 +32,7 @@ header {
   border-radius: 8px;
   padding: 5px 15px;
   font-family: 'octin';
-
+  transition: visibility 0s, opacity 0.5s linear;
   }
 }
 .container-fluid{
@@ -62,6 +62,11 @@ img{
 form{
   width: 60%;
 }
+
+nav{
+  z-index: -4;
+}
+
 nav a {
   color: #d9d1d4;
   text-shadow: $text-shadow;
