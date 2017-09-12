@@ -18,37 +18,37 @@ Artist.create([{
   name: 'Shok-1',
   description: 'British artist SHOK-1 spraypaints unique X-ray art on walls around the world. The works present a  diagnosis of life in the 21st century, sometimes in glowing health and other times pathological. A cool blend of street and science, the paintings are enormously popular. Darkly beautiful and packed with subtle layers of delicate detail, X-rays are one of the most difficult subject matters a painter could attempt. SHOK-1 has pioneered cutting-edge freehand techniques, no tape or stencils are used to render the intricate translucent effects.He was one of the first Europeans to co-opt the street cultures that exploded from the USA in the early 80\'s, laying down the foundations for what has become one of the most important art movements worldwide. He has continued to reinvent his work and take risks throughout a career currently spanning over 30 years. SHOK-1 is based in London and holds a degree in Applied Chemistry.',
   styles: 'Aerosol X-Ray',
-  image: '/public/assets/images/shok-1-rainbow.jpg',
+  image: '/public/assets/images/shok-1-rainbow-min.jpg',
   caption: '3D Hand'
 }, {
   name: 'Faith 47',
   description: 'Faith47 (born Cape Town, 1979) is a South African artist. She began painting in 1997, three years after the end of apartheid. Using a wide range of media, her approach is explorative and substrate appropriate – from found and rescued objects, to time-layered and history-textured city walls, to studio-prepared canvas and wood. A self-taught artist, Faith47 is widely regarded as one of the most famous South African street artists, although her art has reached international fame. Faith47 is also one of the most famous female street and graffiti artists in the world.',
   styles: 'Textured Imaging',
-  image: '/public/assets/images/faith47.jpg',
+  image: '/public/assets/images/faith47-min.jpg',
   caption: 'Blindfolded Woman'
 }, {
   name: 'Vhils',
   description: 'Alexandre Farto was born in Portugal in 1987. He studied at the Byam Shaw School of Art in London, and now lives and works in London and Lisbon. He gained prominence when his work of a face carved into a wall appeared alongside a picture by street artist Banksy at the Cans Festival in London in 2008. A photograph of him creating the work appeared on the front page of The Times.',
   styles: 'Reverse Graffiti',
-  image: '/public/assets/images/vhils.jpg',
+  image: '/public/assets/images/vhils-min.jpg',
   caption: 'Man\'s Face'
 }, {
   name: 'Banksy',
   description: 'Banksy is an England-based graffiti artist, political activist, and film director of unverified identity. Their satirical street art and subversive epigrams combine dark humour with graffiti executed in a distinctive stenciling technique. Banksy\'s works of political and social commentary have been featured on streets, walls, and bridges of cities throughout the world. Banksy\'s work grew out of the Bristol underground scene, which involved collaborations between artists and musicians.',
   styles: 'Distinctive Stenciling',
-  image: '/public/assets/images/banksy.jpg',
+  image: '/public/assets/images/banksy-min.jpg',
   caption: 'Crying Child'
 }, {
   name: 'Gregos',
   description: 'Gregos, grew up in the northern suburbs of Paris, where he was born in 1972. Self-taught, his first steps in street art were in graffiti painting during the late 80s and, early 90s. He invented his own 3D concept, and creates a replicate of his own face, with different emotions. More than 1000 faces have been installed, in Paris, and many places all over the world.',
   styles: 'Moulding & Sculpting',
-  image: 'public/assets/images/gregos.jpg',
+  image: 'public/assets/images/gregos-min.jpg',
   caption: 'Tongue-out Mask'
 }, {
   name: 'WRDSMTH',
   description: 'WRDSMTH is a Los Angeles-based street artist of unverified identity known for his iconic image of a vintage typewriter with different sheets of inspirational text. From 2001 to 2007, the artist behind WRDSMTH was living in Chicago working in advertising. He moved to Los Angeles to pursue writing and became a published author in 2012.',
   styles: 'Stencil & Wheat Paste Poster',
-  image: '/public/assets/images/wrdsmth.jpg',
+  image: '/public/assets/images/wrdsmth-min.jpg',
   caption: 'Typewriter'
 }])
   .then(artists => {
