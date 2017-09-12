@@ -36,6 +36,7 @@ header {
   transition: visibility 0s, opacity 0.5s linear;
   }
 }
+
 h2 {
   font-family: $stencil;
 }
@@ -45,6 +46,12 @@ h5{
   padding-left: 2%;
 }
 
+a.nav-link{
+  &:hover{
+    border: 1px $font-color solid;
+    border-radius: 3px;
+  }
+}
 
 .container-fluid{
 
@@ -73,14 +80,24 @@ img{
   box-shadow: $box-shadow;
   border-radius: 5px;
 }
-form{
-  background-color: $background-color;
+.form-control{
+  background-color:$background-color;
   color: $font-color;
+  &:active{
+    background-color:$background-color;
+    color: $font-color;
+  }
+  }
+
+
+input{
+  background-color: $background-color;
 }
 
 .comments {
   form {
     display: inline;
+
   }
 }
 
@@ -159,4 +176,12 @@ textarea{
 .btn-submit{
 @extend .btn-delete;
   background-color:rgb(22, 119, 82);
+}
+.top{
+  color:$font-color;
+  text-align: right;
+  flex-direction: row;
+  align-self: flex-end;
+  z-index: 9;
+  position: fixed;
 }
