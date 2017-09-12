@@ -8,13 +8,14 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  align-items: flex-end;
-
+  align-items: center;
+  flex-direction: column;
 }
 .main-header {
-  margin-bottom: 20%;
+  margin-top: 50%;
   background-color: $background-color;
   border-radius: $border-radius;
+  display: flex;
   h1{
   font-family: 'octin';
   font-size: 50px;
@@ -26,6 +27,8 @@
   justify-content: space-around;
   background-color: $background-color;
   z-index: -1;
+  align-content: center;
+
 }
 
 .hero {
@@ -46,4 +49,19 @@
   height: 100vh;
   width: 100vw;
   background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAADUlEQVR42mNg8GWAAAACcgBO5qlXQgAAAABJRU5ErkJggg==) repeat 0 0;
+}
+
+.arrow{
+  display: flex;
+  align-self: flex-end;
+}
+.types{
+  padding-top: 2%;
+  margin-bottom: -1%;
+  text-align: center;
+}
+.terms{
+  background-color: $background-color;
+  width: 100%;
+  padding: 3% 14%
 }

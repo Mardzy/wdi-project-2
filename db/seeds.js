@@ -48,7 +48,7 @@ Artist.create([{
   name: 'WRDSMTH',
   description: 'WRDSMTH is a Los Angeles-based street artist of unverified identity known for his iconic image of a vintage typewriter with different sheets of inspirational text. From 2001 to 2007, the artist behind WRDSMTH was living in Chicago working in advertising. He moved to Los Angeles to pursue writing and became a published author in 2012.',
   styles: 'Stencil & Wheat Paste Poster',
-  image: '/assets/images/square/wrdsmth-min.jpg',
+  image: '/assets/images/square/wrdsmth-dream.jpg',
   caption: 'Typewriter'
 }])
   .then(artists => {
@@ -71,7 +71,7 @@ Artist.create([{
       image: '/assets/images/faith47-min.jpg',
       type: 'Textured Image'
     }, {
-      image: '/assets/images/wrdsmth-dream.jpg',
+      image: '/assets/images/wrdsmth-min.jpg',
       type: 'Wheatpaste'
     }])
       .then(types => {

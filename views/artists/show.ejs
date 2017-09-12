@@ -1,5 +1,5 @@
 <header>
-  <h2><%= artist.name %></h2>
+  <h2 class="featured"><%= artist.name %></h2>
 </header>
 <main>
   <div class="container">
@@ -9,7 +9,7 @@
           <img src="<%= artist.image %>" alt="<%= artist.caption %>">
         </figure>
         <div class="row name">
-          <p class="col-6 style"><%= artist.styles %></p>
+          <h5 class="col-6 style"><%= artist.styles %></h5>
         </div>
       </div>
       <div class="col-lg-4 description">

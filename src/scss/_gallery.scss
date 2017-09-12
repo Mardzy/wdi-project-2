@@ -1,3 +1,33 @@
-.image{
-  width :75%;
+.title.gallery{
+  bottom:12%;
+  left:8%;
+  width:45%;
+}
+
+.comment {
+  font-size: 28px;
+  font-family: $stencil;
+
+}
+
+.title.show{
+  bottom:8%;
+}
+.btn-small.btn-delete{
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.container-fluid.comments-container{
+  display: flex;
+}
+.comments-row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+
+
+}
+.comments-items{
 }
