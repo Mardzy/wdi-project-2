@@ -110,7 +110,7 @@ Artist.create([{
             }, {
               artist: 'Jimmy C',
               location: 'Brixton',
-              image: '/assets/images/square/brixton-bowie.jpg',
+              image: '/assets/images/square/brixton-bowie-min.jpg',
               caption: 'David Bowie',
               comments: []
             }, {
