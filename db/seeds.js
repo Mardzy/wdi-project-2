@@ -71,7 +71,7 @@ Artist.create([{
       image: '/assets/images/faith47-min.jpg',
       type: 'Textured Image'
     }, {
-      image: '/assets/images/wrdsmth-min.jpg',
+      image: '/assets/images/wrdsmth-dream-min.jpg',
       type: 'Wheatpaste'
     }])
       .then(types => {
