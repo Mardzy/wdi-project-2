@@ -24,31 +24,31 @@ Artist.create([{
   name: 'Faith 47',
   description: 'Faith47 (born Cape Town, 1979) is a South African artist. She began painting in 1997, three years after the end of apartheid. Using a wide range of media, her approach is explorative and substrate appropriate – from found and rescued objects, to time-layered and history-textured city walls, to studio-prepared canvas and wood. A self-taught artist, Faith47 is widely regarded as one of the most famous South African street artists, although her art has reached international fame. Faith47 is also one of the most famous female street and graffiti artists in the world.',
   styles: 'Textured Imaging',
-  image: '/assets/images/faith47-sq-min.jpg',
+  image: '/assets/images/square/faith47-sq-min.jpg',
   caption: 'Blindfolded Woman'
 }, {
   name: 'Vhils',
   description: 'Alexandre Farto was born in Portugal in 1987. He studied at the Byam Shaw School of Art in London, and now lives and works in London and Lisbon. He gained prominence when his work of a face carved into a wall appeared alongside a picture by street artist Banksy at the Cans Festival in London in 2008. A photograph of him creating the work appeared on the front page of The Times.',
   styles: 'Reverse Graffiti',
-  image: '/assets/images/vhils-sh-min.jpg',
+  image: '/assets/images/square/vhils-sh-min.jpg',
   caption: 'Man\'s Face'
 }, {
   name: 'Banksy',
   description: 'Banksy is an England-based graffiti artist, political activist, and film director of unverified identity. Their satirical street art and subversive epigrams combine dark humour with graffiti executed in a distinctive stenciling technique. Banksy\'s works of political and social commentary have been featured on streets, walls, and bridges of cities throughout the world. Banksy\'s work grew out of the Bristol underground scene, which involved collaborations between artists and musicians.',
   styles: 'Distinctive Stenciling',
-  image: '/assets/images/banksy-kid-crying-min.jpg',
+  image: '/assets/images/square/banksy-kid-crying-min.jpg',
   caption: 'Crying Child'
 }, {
   name: 'Gregos',
   description: 'Gregos, grew up in the northern suburbs of Paris, where he was born in 1972. Self-taught, his first steps in street art were in graffiti painting during the late 80s and, early 90s. He invented his own 3D concept, and creates a replicate of his own face, with different emotions. More than 1000 faces have been installed, in Paris, and many places all over the world.',
   styles: 'Moulding & Sculpting',
-  image: '/assets/images/gregos-rainbow-min.jpg',
+  image: '/assets/images/square/gregos-rainbow-min.jpg',
   caption: 'Tongue-out Mask'
 }, {
   name: 'WRDSMTH',
   description: 'WRDSMTH is a Los Angeles-based street artist of unverified identity known for his iconic image of a vintage typewriter with different sheets of inspirational text. From 2001 to 2007, the artist behind WRDSMTH was living in Chicago working in advertising. He moved to Los Angeles to pursue writing and became a published author in 2012.',
   styles: 'Stencil & Wheat Paste Poster',
-  image: '/assets/images/wrdsmth-dream-min.jpg',
+  image: '/assets/images/square/wrdsmth-dream.jpg',
   caption: 'Typewriter'
 }])
   .then(artists => {
@@ -59,7 +59,7 @@ Artist.create([{
       image: '/assets/images/shok-1-rainbow-min.jpg',
       type: '3D Aerosol'
     }, {
-      image: '/assets/images/gregos-11-min.jpg',
+      image: '/assets/images/gregos-stripes.jpg',
       type: 'Installation'
     }, {
       image: '/assets/images/banksy-dreams-min.jpg',
@@ -102,100 +102,148 @@ Artist.create([{
             console.log(`${terms.length} terms created`);
 
             return Photo.create([{
-              artist: 'Globalstre',
+              artist: 'Unknown',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/DfA5wBqb.jpg',
-              caption: 'Asian Boy',
+              image: 'https/assets/images/hanging-min.jpg',
+              caption: 'left me hanging',
               comments: []
             }, {
               artist: 'Jimmy C',
               location: 'Brixton',
-              image: 'https://i.imgur.com/rCuCwSkb.png',
+              image: '/assets/images/brixton-bowie-min.jpg',
               caption: 'David Bowie',
               comments: []
             }, {
               artist: 'Ricky Dep',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/wW8IpD1b.jpg',
+              image: '/assets/images/ricky-d-min.jpg',
               caption: 'Indian Cartoon Man',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Reykjavik',
-              image: 'https://i.imgur.com/tzZlrQub.jpg',
+              image: '/assets/images/reykjavik-min.jpg',
               caption: 'Lovers on Barn',
               comments: []
             }, {
               artist: 'Wuskerski',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/l5FFLhDb.jpg',
+              image: '/assets/images/oink-wusk-min.jpg',
               caption: 'horn snout cartoon',
               comments: []
             }, {
               artist: 'Wuskerski',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/Jkmgmoub.jpg',
+              image: '/assets/images/gr-pur-wusk-min.jpg',
               caption: 'Green and purple bear',
               comments: []
             }, {
               artist: 'Wuskerski',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/aB8eGXqb.png',
+              image: '/assets/images/bloody-nose-wusk-min.jpg',
               caption: 'woman bloody nose',
-              comments: []
-            }, {
-              artist: 'Shok-1',
-              location: 'Shoreditch',
-              image: 'https://i.imgur.com/6h0nN18b.jpg',
-              caption: 'Skeleton 3d',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/6h0nN18b.jpg',
+              image: '/assets/images/vulture-min.jpg',
+              caption: 'Woman with vuture',
+              comments: []
+            }, {
+              artist: 'Unknown',
+              location: 'Shoreditch',
+              image: '/assets/images/cat-in-cat-min.jpg',
               caption: 'cat inside cat',
               comments: []
             }, {
               artist: 'Unknown',
-              location: 'Shoreditch',
-              image: 'https://i.imgur.com/h4uN50bb.jpg',
-              caption: '3d X',
+              location: 'Toronto',
+              image: '/assets/images/toronto-min.jpg',
+              caption: 'toronto street art',
               comments: []
             }, {
-              artist: 'Unknown',
-              location: 'Shoreditch',
-              image: 'https://i.imgur.com/e3tiivab.jpg',
+              artist: 'Jimmy C',
+              location: 'London',
+              image: '/assets/images/jimmy-c-min.jpg',
               caption: 'vote dodo',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/40ODsvrb.jpg',
+              image: '/assets/images/old-man-min.jpg',
               caption: 'Old man\'s face',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Cape Town',
-              image: 'https://i.imgur.com/hFr9bQxb.jpg',
+              image: '/assets/images/woodstock.jpg',
               caption: 'Devil\'s peak art',
               comments: []
             }, {
               artist: 'Lapiztola',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/5txHvf0b.jpg',
-              caption: 'Inuksuk',
+              image: '/assets/images/pig-lapiztola-min.jpg',
+              caption: 'Pig girl woman',
               comments: []
             }, {
               artist: 'Unknown',
               location: 'Kiev',
-              image: 'https://i.imgur.com/py7Nhh8b.jpg',
+              image: '/assets/images/kiev-min.jpg',
               caption: 'street art photo',
               comments: []
             }, {
               artist: 'David DeBrito',
               location: 'Shoreditch',
-              image: 'https://i.imgur.com/WI2zWd0b.png',
+              image: '/assets/images/deBrito-min.jpg',
               caption: 'street art photo',
+              comments: []
+            } , {
+              artist: 'Multiple',
+              location: 'Shoreditch',
+              image: '/assets/images/links-min.jpg',
+              caption: 'street art photo',
+              comments: []
+            } , {
+              artist: 'Unknown',
+              location: 'Shoreditch',
+              image: '/assets/images/cars-min.jpg',
+              caption: 'street art photo',
+              comments: []
+            }, {
+              artist: 'Unknown',
+              location: 'Copenhagen',
+              image: '/assets/images/copenhagen-min.jpg',
+              caption: 'street art photo',
+              comments: []
+            }, {
+              artist: 'Unkown',
+              location: 'Berlin',
+              image: '/assets/images/berlin-love-wall-min.jpg',
+              caption: 'street art photo',
+              comments: []
+            }, {
+              artist: 'Globalstre',
+              location: 'Shoreditch',
+              image: 'https/assets/images/asian-boy-min.jpg',
+              caption: 'Asian Boy',
+              comments: []
+            }, {
+              artist: 'Globalstre',
+              location: 'Shoreditch',
+              image: 'https/assets/images/asian-boy-min.jpg',
+              caption: 'Asian Boy',
+              comments: []
+            }, {
+              artist: 'Invader',
+              location: 'Shoreditch',
+              image: '/assets/images/star-wars-min.jpg',
+              caption: 'street art photo',
+              comments: []
+            }, {
+              artist: 'Gregos',
+              location: 'Shoreditch',
+              image: '/assets/images/gregos-min.jpg',
+              caption: 'Gregos face',
               comments: []
             }
             ]);
