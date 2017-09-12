@@ -104,7 +104,7 @@ Artist.create([{
             return Photo.create([{
               artist: 'Unknown',
               location: 'Shoreditch',
-              image: 'https/assets/images/square/hanging-min.jpg',
+              image: '/assets/images/square/hanging-min.jpg',
               caption: 'left me hanging',
               comments: []
             }, {
@@ -224,13 +224,13 @@ Artist.create([{
             }, {
               artist: 'Globalstre',
               location: 'Shoreditch',
-              image: 'https/assets/images/square/asian-boy-min.jpg',
+              image: '/assets/images/square/asian-boy-min.jpg',
               caption: 'Asian Boy',
               comments: []
             }, {
               artist: 'Globalstre',
               location: 'Shoreditch',
-              image: 'https/assets/images/square/asian-boy-min.jpg',
+              image: '/assets/images/square/asian-boy-min.jpg',
               caption: 'Asian Boy',
               comments: []
             }, {
