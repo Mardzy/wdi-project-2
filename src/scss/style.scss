@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'octin';
+    src: url('../assets/fonts/octin_spraypaint_free-webfont.woff2') format('woff2'),
+         url('../assets/fonts/octin_spraypaint_free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @import "variables";
 @import "homepage";
 @import "gallery";

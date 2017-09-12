@@ -13,9 +13,9 @@
     </header>
   </div>
   <%- include ./partials/_navbar %>
-  <% if(!locals.isHomepage) { %><main class="section"><% } %>
+  <% if(!locals.isHomepage) { %><% } %>
   <%- body %>
-  <% if(!locals.isHomepage) { %></main><% } %>
+  <% if(!locals.isHomepage) { %><% } %>
   <%- include ./partials/_scripts %>
 </body>
 </html>

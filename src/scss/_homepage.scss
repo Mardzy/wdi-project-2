@@ -3,7 +3,7 @@
   width:100%;
   display: flex;
   justify-content: space-around;
-  background-image:linear-gradient(to top, rgba(20, 20, 20, 0.2), rgba(0, 0, 0, 0.6)), url('https://i.imgur.com/u0c8dXa.png');
+  background-image:linear-gradient(to top, rgba(20, 20, 20, 0.2), rgba(0, 0, 0, 0.6)), url('..public/assets/images/banksy-2.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -16,6 +16,7 @@
   background-color: $background-color;
   border-radius: $border-radius;
   h1{
+  font-family: 'octin';
   font-size: 50px;
   padding: 5px 15px;
   font-weight: 200;
