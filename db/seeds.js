@@ -228,9 +228,9 @@ Artist.create([{
               caption: 'Asian Boy',
               comments: []
             }, {
-              artist: 'Globalstre',
+              artist: 'Banksy',
               location: 'Shoreditch',
-              image: '/assets/images/square/asian-boy-min.jpg',
+              image: '/assets/images/square/banksy-kid-crying-min.jpg',
               caption: 'Asian Boy',
               comments: []
             }, {
