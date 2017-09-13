@@ -1,7 +1,10 @@
-.title.gallery{
+h5.title.gallery{
   bottom:12%;
   left:8%;
   width:45%;
+  &:hover{
+    background-color: $hover;
+  }
 }
 
 .comment {
@@ -24,4 +27,10 @@
 
 .featured.new{
   width:38%;
+}
+.photos-container{
+  padding-bottom: 30px;
+}
+div.container.newphotos{
+  height: 1009px;
 }

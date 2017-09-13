@@ -1,4 +1,4 @@
-<div class="container hero">
+<div id="top" class="container hero">
   <div class="overlay">
   </div>
   <div class="row">
@@ -6,14 +6,18 @@
     <h1 class="col-12">Heaven Spot Heroes</h1>
   </header>
 </div>
-<div class="row">
-  <i class="fa fa-arrow-circle-down arrow col-lg-12" aria-hidden="true"><span class="icon">  TEMPTING YOU...?</span></i>
+<div class="row mobile">
+  <p>
+  <i class="fa fa-arrow-circle-down arrow col-lg-12" aria-hidden="true"><span class="icon">...Scroll for more...</span></i></p>
 
 </div>
 
 </div>
 <div class="container-fluid homepage">
-  <a class="top" href="#top"><i class="fa fa-arrow-circle-up col-lg-12" aria-hidden="true"><span class="top">  TO TOP</span></i></a>
+  <h2 class="types">Hi everyone!</h2>
+  <article class="row">
+    <p class="col-9 justify-content-lg-center">Welcome to Heaven Spot Heroes. Register and you will be able to add photos to the gallery.<br> I love street art, and enjoy seeing it from other points of view. Have a look around, and please try to give credit to the artists if you post</p>
+  </article>
   <h2 class="types">Street Art Types</h2>
   <article class="row">
     <% types.forEach((type) => { %>
@@ -26,11 +30,7 @@
   </div>
 
   <div class="container-fluid terms">
-    <article class="personal">
-      <h2 class="terms-heading">Community</h2>
-        <p>Hi everyone!<br>
-        Feel free to register to the site, and maybe even post some photos. I love street art and would enjoy to see it through other points of view. Have a look around, and please try to give credit to the artists if you post</p>
-    </article>
+
   <h2 class="terms-heading">Street Art Terms</h2>
   <article class="row">
     <% terms.forEach((term) => { %>

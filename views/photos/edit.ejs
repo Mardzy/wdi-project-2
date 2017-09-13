@@ -1,36 +1,31 @@
-
-
-
-
-
-<div class="container-fluid">
+<div class="container">
   <header class="row justify-content-center">
-    <h2 class="col-12">Edit Photos</h2>
+    <h2 class="featured">Edit Photos</h2>
   </header>
   <form method="POST" action="/photos/<%= photo.id %>">
     <input type="hidden" name="_method" value="PUT">
     <div class="form-group row">
       <label for="artist" class="col-2 col-form-label">Artist</label>
       <div class="col-10">
-        <input class="form-control" type="text" name="artist" value="<%= photo.artist %>" id="example-text-input">
+        <input class="form-control" type="text" name="artist" value="<%= photo.artist %>" id="example-text-input" required>
       </div>
     </div>
     <div class="form-group row">
       <label for="location" class="col-2 col-form-label">Location</label>
       <div class="col-10">
-        <input class="form-control" type="text" name="location" value="<%= photo.location %>" id="example-text-input">
+        <input class="form-control" type="text" name="location" value="<%= photo.location %>" id="example-text-input" required>
       </div>
     </div>
     <div class="form-group row">
       <label for="image" class="col-2 col-form-label">Image URL</label>
       <div class="col-10">
-        <input class="form-control" type="url" name="image" value="<%= photo.image %>" id="example-url-input">
+        <input class="form-control" type="url" name="image" placeholder="https://i.imgur.com/LOU3kcEb.png" id="example-url-input" required>
       </div>
     </div>
     <div class="form-group row">
       <label for="caption" class="col-2 col-form-label">Description</label>
       <div class="col-10">
-        <input class="form-control" type="text" name="caption" value="<%= photo.caption %>" id="example-text-input">
+        <input class="form-control" type="text" name="caption" value="<%= photo.caption %>" id="example-text-input" required>
       </div>
     </div>
     <button class="btn btn-primary">Update</button>

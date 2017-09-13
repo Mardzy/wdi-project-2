@@ -9,8 +9,9 @@
 }
 @import "variables";
 @import "homepage";
-@import "gallery";
+@import "photos";
 @import "artists";
+@import "footer";
 *{
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
@@ -25,6 +26,7 @@ body {
 }
 header {
   background: none;
+  padding-top: 10px;
 
   h2{
     background-color: $background-color;
@@ -37,16 +39,23 @@ header {
     transition: visibility 0s, opacity 0.5s linear;
   }
 }
+nav.navbar{
+  padding: 5px 5px;
+}
 .navbar-toggler-icon{
   color: $font-color;
-  border: 3px $font-color solid;
-  border-radius: 3px;
-  width: 35px;
+  font-weight: width;
+  text-shadow: $text-shadow
 }
 
-button.navbar-toggler {
-  border: none;
+button.navbar-toggler.navbar-toggler-right {
+  color:$font-color;
+  flex-direction: row;
   outline: none;
+  border:$font-color 2px solid;
+  box-shadow: $box-shadow;
+  width:6wv;
+  height:vh;
 }
 h2 {
   font-family: $stencil;
@@ -62,12 +71,11 @@ a.nav-link{
     border: 1px $font-color solid;
     border-radius: 3px;
     background-color:$background-color;
-    
+    font-size: 18px;
   }
 }
 
 .container-fluid{
-
   background-color: $background-color;
   z-index: -1;
   padding-top: 5px;
@@ -119,7 +127,7 @@ nav a {
   color: $font-color;
   text-shadow: $text-shadow;
   margin: 0 15px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 200;
 }
 
@@ -129,7 +137,7 @@ nav a {
 
 .photo-image{
   position: relative;
-  padding-top: 3%;
+  margin-top: 1%;
 }
 
 .title{
@@ -151,7 +159,6 @@ a{
   color: #d36a48;
   &:hover{
     color:#cf5c36;
-
   }
 }
 
@@ -186,11 +193,25 @@ textarea{
 .btn-submit{
   @extend .btn-edit;
 }
-.top{
-  color:$font-color;
-  text-align: right;
-  flex-direction: row;
-  align-self: flex-end;
-  z-index: 9;
-  position: fixed;
+
+#alert{
+  margin: 50px auto 0 0;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(139, 17, 17);
+  text-shadow: $text-shadow;
+  padding:10px;
+  #alert.lighter {
+    color: lighten($background-color, 5%);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .container-fluid{
+    width: 80%;
+  }
+
+  .contain{
+    width: 75%;
+  }
 }

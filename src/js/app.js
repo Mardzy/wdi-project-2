@@ -38,6 +38,10 @@ $(()=>{
       });
     }
   });
+  const $form = $('form');
 
+
+
+  if($form.length > 0) $form.validate();
 
 });

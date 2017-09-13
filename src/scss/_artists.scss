@@ -1,8 +1,13 @@
 .featured{
   width: 28%;
-  margin: 6% auto 3%;
+  margin: 4% auto 1%;
 }
 .title.artist{
   bottom:5%;
   left:8%;
+}
+.artist-description{
+  background-color: $background-color;
+  padding: 10px;
+  border-radius: 3px;
 }

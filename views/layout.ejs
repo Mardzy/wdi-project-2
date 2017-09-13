@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Heaven Spot Heroes</title>
   <%- include ./partials/_stylesheets %>
-
 </head>
 <body>
   <div class="container hero">
@@ -14,10 +13,13 @@
     </header>
   </div>
   <%- include ./partials/_navbar %>
-  
-  <% if(!locals.isHomepage) { %><% } %>
+    <% if(!locals.isHomepage) { %><main class="section"><% } %>
+      <% for (const type in messages) { %>
+        <p id="alert" class="notification is-<%= type %>"><%= messages[type] %></p>
+  <% } %>
   <%- body %>
-  <% if(!locals.isHomepage) { %><% } %>
+  <% if(!locals.isHomepage) { %></main><% } %>
+  <%- include ./partials/_footer %>
   <%- include ./partials/_scripts %>
 </body>
 </html>
