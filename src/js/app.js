@@ -17,6 +17,7 @@ $(()=>{
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 280) { //use `this`, not `document`
+
       $mainHeader.css({
         'display': 'none'
       });

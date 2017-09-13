@@ -72,6 +72,7 @@ a.nav-link{
     border: 1px $font-color solid;
     border-radius: 3px;
     background-color:$background-color;
+    color:#d6cbcf;
   }
 }
 
@@ -155,7 +156,7 @@ nav a {
   padding: 3% 0 1%;
 }
 a{
-  color: #d36a48;
+
   &:hover{
     color:#cf5c36;
   }

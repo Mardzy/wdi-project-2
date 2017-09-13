@@ -2,18 +2,19 @@
   <h2 class="featured">Featured Artists</h2>
 </header>
 
-<div class="container">
+<div class="container featured-artists">
   <div class="row">
     <% artists.forEach((artist) => { %>
     <div class="col-sm-6 col-lg-4 photo-image">
       <div>
-        <img class="shadow" src="<%= artist.image %>" alt="<%= artist.caption %>">
+        <a href="/artists/<%= artist.id %>"><img class="shadow" src="<%= artist.image %>" alt="<%= artist.caption %>"></a>
       </div>
         <div>
-          <a href="/artists/<%= artist.id %>"><h5 class="title artist"><%= artist.name %></h5></a>
+          <h5 class="title artist"><%= artist.name %></h5>
           <p><%= artist.location %></p>
         </div>
       </div>
     <% }); %>
   </div>
 </div>
+</a>
