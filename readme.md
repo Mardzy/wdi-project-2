@@ -4,26 +4,25 @@
 
 *Check it out here.* [Check it out here!](https://heaven-spot-heroes.herokuapp.com/)
 
-### Rules
-![alt text](dice-sums-rules.png "Logo Title Text 1")
-### Game Description
+### Introduction
 
-The game board is created with a computer player (red), and user player (blue). Upon starting the game the dice will be rolled for both players. The computer's dice are hidden from the user and only revealed when the round of the game is over. The player can select three dice or less before exchanging the dice.
-When the dice are exchanged they are rolled in an attempt to created a greater sum. The player has three opportunities to exchange dice before the game ends and the opponents' sums are compared. START GAME resets the win and loss margin. NEW ROUND starts a new round of the same game and will track wins and losses. EXCHANGE DICE rolls new dice after dice have been seleted (6 is highest value 1 is lowest). HOLD can end the game to compare dice.
+This app was made over a 5 day period. The project required to create an Express JS app, with MongoDb, using authentication, the 'CRUD' operations, and RESTful routing. We were also to use a frontend framework. I decided to use Bootstrap 4. In the project I created 5 models. Two to fill information and photos for the homepage, and a model for Artists, a Photo Gallery, and for a User. It was really interesting to have some time to put to use all that we have learned in this section.
+![alt text](homepage.png "Logo Title Text 1")
 
-![alt text](dice-sums-title.png "Logo Title Text 1")
+### The app
 
+I love Street Art, and thought it could be interesting to make an app that could allow users to post photos, edit information, and comment on what others have shared. I feel I accomplished what I had set out to do with my design and look forward to working on the app moving forward
 
-### Build
+![alt text](artists.png "Logo Title Text 1")
 
-* Javascript, jQuery, SCSS & HTML5 were used to create the game.
 
 ### Challenges
 
-The main issue was finding a method to track the dice's values when selected to be removed, and keep the current dice with their index and value.
+The challenges I faced in this project were putting my design ideas into implementation. I spent some time becoming familiar with Bootstrap 4, as previously I had used Bootstrap 4. Another issue was being organised with all of the files and directories.
 
-![alt text](dice-sums-win.png "Logo Title Text 1")
+![alt text](photo.png "Logo Title Text 1")
+
 
 ### Moving Forward
 
-This game could move in a few directions with some time and planning. It could create Yahtzee, Poker Dice, Poker, or maybe even Backgammon.
+I am excited to add more features to the app in the future. It will be nice to add user's name to their comments, create a like button for photos, have a mapping system that shows where the items are located, and an internal messaging system for the users.
